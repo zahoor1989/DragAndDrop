@@ -1,0 +1,113 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  margin:0;
+  padding:0;
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
+      -webkit-transform 0.3s ease-in-out;
+  }
+  /* .offcanvas-collapse.open {
+    visibility: visible;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  } */
+}
+
+/* .open {
+  visibility: visible;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+} */
+
+.App {
+  text-align: center;
+  width: 95%;
+  margin: 15px auto;
+}
+
+.container-drag {
+  text-align: center;
+}
+.todo {
+  position: relative;
+  width: 30%;
+  height: 100vh;
+  left: 0;
+  top: 10;
+  background-color: #e7d2d2;
+  border-right: 1px dotted;
+}
+
+.wip {
+  position: relative;
+  width: 30%;
+  height: 100vh;
+  left: 200;
+  top: 10;
+  background-color: #9eaaf4;
+  border-right: 1px dotted;
+}
+.inqa {
+  position: relative;
+  width: 30%;
+  height: 100vh;
+  left: 600;
+  top: 10;
+  background-color: #ffe9a9;
+  border-right: 1px dotted;
+}
+
+.header {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #ceffda;
+  width:100%;
+}
+
+.task-header {
+  display: inline-block;
+  background-color: rgb(216, 225, 228);
+  width:100%;
+}
+
+.droppable {
+  position: relative;
+  width: 30%;
+  height: 100vh;
+  right: 0;
+  top: 10;
+  background-color: #9fd487;
+  border-left: 1px dotted;
+}
+
+.draggable {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  margin: 5px auto;
+  line-height: 5em;
+  border-radius: 5%;
+  box-shadow:#978a8a;
+}
+
+
